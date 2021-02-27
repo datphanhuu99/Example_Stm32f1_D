@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"count_down\startup_stm32f103xb.o"
+"count_down\i2c-lcd.o"
+"count_down\main.o"
+"count_down\stm32f1xx_it.o"
+"count_down\stm32f1xx_hal_msp.o"
+"count_down\stm32f1xx_hal_gpio_ex.o"
+"count_down\stm32f1xx_hal_i2c.o"
+"count_down\stm32f1xx_hal_tim.o"
+"count_down\stm32f1xx_hal_tim_ex.o"
+"count_down\stm32f1xx_hal.o"
+"count_down\stm32f1xx_hal_rcc.o"
+"count_down\stm32f1xx_hal_rcc_ex.o"
+"count_down\stm32f1xx_hal_gpio.o"
+"count_down\stm32f1xx_hal_dma.o"
+"count_down\stm32f1xx_hal_cortex.o"
+"count_down\stm32f1xx_hal_pwr.o"
+"count_down\stm32f1xx_hal_flash.o"
+"count_down\stm32f1xx_hal_flash_ex.o"
+"count_down\stm32f1xx_hal_exti.o"
+"count_down\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "count_down\count_down.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "count_down.map" -o count_down\count_down.axf
